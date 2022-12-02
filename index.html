@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>   
+    <title>TestOnline</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" height="100%"/>
+    </header>
+    <div style="display: flex;" class="container">
+        <div class="left">
+            <img src="logo.svg" class="ban"/>
+            <h1 class="title">Bienvenu sur TestOnline!</h1>
+        </div>
+        <div class="right">
+            
+            <h2 style="margin-bottom: 0; letter-spacing: 1.5px;">Consultez Vos Résultats </h2>
+            <form id="form">
+                        <label for="nom">Nom</label>
+                        <input id="nom" type="text" placeholder="Enter Your Name..." required autocomplete="off"/> 
+                        <label for="mail">Email</label>
+                        <input id="mail" type="email" placeholder="youremail@example.com" required autocomplete="off"/>
+                        <label for="comment">Code</label>
+                        <input id="comment" type="text" placeholder="Your Code..." required autocomplete="off"/>
+                <button id = "submit-container"class="submit-container">
+                        Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="alert"  class="remplir-svp">
+        <h3>Remplissez Correctement le Formulaire <br>S'il vous plait !</h3>
+    </div>
+    <div id="confirm">
+        <h1>Request Sent !</h1>
+    </div>
+</body>
+</html>

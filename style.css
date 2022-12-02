@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    background: linear-gradient(-35deg,rgb(81, 0, 0) 20%,#282828 80%);
+    font-family: roboto;
+    color: white ;
+    padding: 30px;
+    display: flex;
+    overflow: hidden;
+    padding-top: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    position: sticky;
+    top: 0; height: 40px;
+}
+.container{
+    align-items: center;
+    display: flex;
+
+    
+}
+.left{
+    width: 60%;display: flex; align-items: center;
+}
+.right{
+    width:40%;
+}
+
+.ban{
+    margin-right: 50px; 
+    height:400px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0px;
+}
+input{
+    height: 20px;
+    border: solid 3px white;
+    background-color: #282828;
+    padding: 10px;
+    outline: none;
+    font-weight: bold;
+    color: white;
+}
+label{
+    font-size: .9em;
+    margin-top: 10px;
+}
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.submit-container{
+    height: 35px;
+    display: flex;
+    width: 100px;
+    background: linear-gradient(45deg,#BD0404 30%, #282828); 
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color:white;
+    transition: ease-in-out 1s;
+    margin: auto;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+}
+.make-it-move{
+    transition: ease-in-out .2s;
+    transform: translateY(-55px);
+    opacity: 0;
+}   
+.title{
+    margin:0; 
+    font-size: 3.5em;
+}
+.remplir-svp{
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px;
+    background-color: #282828c0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
+}
+#confirm{
+    background-color: #720000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    display: none;
+}
+@media only screen and (max-width:1077px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .ban{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        border-bottom: solid white 2px;
+    }
+    .right{
+        width: 100%;
+    }
+    form {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .input-wrap{
+        width: 100%;
+    }
+    body{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    input{
+        width: 100%;
+    }
+    #confirm{
+        font-size: 1.5em;
+    }
+
+}
+
